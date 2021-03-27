@@ -8,8 +8,8 @@ public class Chunk
     public ChunkCoord coord;
     GameObject chunkObject;
     MeshRenderer meshRenderer;
-    MeshFilter meshFilter;
-    MeshCollider meshCollider;
+    MeshFilter meshFilter; 
+    //MeshCollider meshCollider;
 
     int vertexIndex = 0;
     List<Vector3> vertices = new List<Vector3>();
@@ -41,7 +41,7 @@ public class Chunk
         chunkObject = new GameObject();
         meshFilter = chunkObject.AddComponent<MeshFilter>();
         meshRenderer = chunkObject.AddComponent<MeshRenderer>();
-        meshCollider = chunkObject.AddComponent<MeshCollider>();
+        //meshCollider = chunkObject.AddComponent<MeshCollider>();
 
         materials[0] = world.material;
         materials[1] = world.transparentMaterial;
@@ -54,7 +54,7 @@ public class Chunk
         chunkObject.layer = 8;
         position = chunkObject.transform.position;
 
-        meshCollider.sharedMesh = meshFilter.mesh;
+        //meshCollider.sharedMesh = meshFilter.mesh;
         //meshCollider.material = new PhysicMaterial("NonFriction");
 
 

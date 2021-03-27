@@ -92,16 +92,16 @@ public class Player : MonoBehaviour {
 
         // Affect vertical momentum with gravity.
         if (verticalMomentum > gravity)
-            verticalMomentum += Time.deltaTime * gravity;
+            verticalMomentum += Time.fixedDeltaTime * gravity;
 
         // if we're sprinting, use the sprint multiplier.
         if (isSprinting)
-            velocity = ((transform.forward * vertical) + (transform.right * horizontal)) * Time.deltaTime * sprintSpeed;
+            velocity = ((transform.forward * vertical) + (transform.right * horizontal)) * Time.fixedDeltaTime * sprintSpeed;
         else
-            velocity = ((transform.forward * vertical) + (transform.right * horizontal)) * Time.deltaTime * walkSpeed;
+            velocity = ((transform.forward * vertical) + (transform.right * horizontal)) * Time.fixedDeltaTime * walkSpeed;
 
         // Apply vertical momentum (falling/jumping).
-        velocity += Vector3.up * verticalMomentum * Time.deltaTime;
+        velocity += Vector3.up * verticalMomentum * Time.fixedDeltaTime;
 
         if ((velocity.z > 0 && front) || (velocity.z < 0 && back))
             velocity.z = 0;
