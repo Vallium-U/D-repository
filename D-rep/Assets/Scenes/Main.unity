@@ -14,8 +14,8 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.41176474, g: 0.35686275, b: 0.29803923, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -330,6 +330,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a3c9d085cbbf13c48b7049547b630a19, type: 2}
   - {fileID: 11400000, guid: ea085d2dd681adf40aae09ab83faad29, type: 2}
   - {fileID: 11400000, guid: 8d974405398937348875dfd7cbe5cb35, type: 2}
+  - {fileID: 11400000, guid: 41064c423e835774191d35c40df32ff4, type: 2}
   player: {fileID: 603220561}
   spawnPosition: {x: 0, y: 0, z: 0}
   material: {fileID: 2100000, guid: 01cc3fbf19fb966439b6a2f363594558, type: 2}
@@ -1729,9 +1730,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.16
+  near clip plane: 0.1
   far clip plane: 1000
-  field of view: 75
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: 0

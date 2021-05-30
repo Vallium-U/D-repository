@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -78,8 +79,19 @@ public class Player : MonoBehaviour {
         
         GetPlayerInputs();
         placeCursorBlocks();
+
+        if (Input.GetKey(KeyCode.Backspace))
+        {
+            EscapeToMenu();
+        }
     }
 
+    private void EscapeToMenu()
+    {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+    
     void Jump () {
 
         verticalMomentum = jumpForce;
