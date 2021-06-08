@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca81d4aea38d46aa91b58a7211528dd3, type: 3}
+  m_Name: 1 Random Planet Settings
+  m_EditorClassIdentifier: 
+  resolution:
+    min: 164
+    max: 200
+    lastValue: 168
+  planetRadius:
+    min: 100
+    max: 200
+    lastValue: 124
+  noiseLayers:
+    min: 2
+    max: 4
+    lastValue: 4
+  terrainSimpleNoiseSettings:
+    min:
+      strength: 0.12
+      numberOfLayers: 2
+      persistance: 0.26
+      baseRoughness: 1.6
+      roughness: 4.7
+      centre: {x: -3, y: -3, z: -3}
+      minVal: 0.5
+    max:
+      strength: 0.13
+      numberOfLayers: 4
+      persistance: 0.27
+      baseRoughness: 1.7
+      roughness: 4.8
+      centre: {x: 3, y: 3, z: 3}
+      minVal: 0.6
+    lastValue:
+      strength: 0.12383772
+      numberOfLayers: 3
+      persistance: 0.26328105
+      baseRoughness: 1.6473142
+      roughness: 4.7127414
+      centre: {x: -2.014305, y: -0.059078217, z: -2.8262978}
+      minVal: 0.51465446
+  terrainRidgidNoiseSettings:
+    min:
+      strength: 0.05
+      numberOfLayers: 1
+      persistance: 0.01
+      baseRoughness: 0.1
+      roughness: 0.4
+      centre: {x: -3, y: -3, z: -3}
+      minVal: 0.45
+      weightMultiplier: 0.2
+    max:
+      strength: 1
+      numberOfLayers: 4
+      persistance: 1.2
+      baseRoughness: 3
+      roughness: 5
+      centre: {x: 3, y: 3, z: 3}
+      minVal: 0.9
+      weightMultiplier: 2
+    lastValue:
+      strength: 1
+      numberOfLayers: 1
+      persistance: 0.5
+      baseRoughness: 2
+      roughness: 1
+      centre: {x: 0, y: 0, z: 0}
+      minVal: 0
+      weightMultiplier: 0.8
+  terrainNoiseStrength:
+    min: 0.5
+    max: 1.5
+    lastValue: 1.4700232
+  terrainTextureScale:
+    min: {x: 0.5, y: 0.5}
+    max: {x: 1.5, y: 1.5}
+    lastValue: {x: 1.211336, y: 1.0391351}
+  oceanDepth:
+    min: {r: 0, g: 0, b: 0, a: 1}
+    max: {r: 0.0016909974, g: 0.012903169, b: 0.2901961, a: 1}
+    lastValue: {r: 0.000284506, g: 0.0049930727, b: 0.071472175, a: 1}
+  oceanSurface:
+    min: {r: 1, g: 1, b: 1, a: 1}
+    max: {r: 0.7216981, g: 0.9911649, b: 1, a: 1}
+    lastValue: {r: 0.73232913, g: 0.9912401, b: 1, a: 1}
+  sand:
+    min: {r: 0.14117648, g: 0.13725491, b: 0.14901961, a: 1}
+    max: {r: 0.36862746, g: 0.19215688, b: 0.011764707, a: 1}
+    lastValue: {r: 0.19873887, g: 0.18106999, b: 0.048250683, a: 1}
+  ground:
+    min: {r: 0.000533999, g: 0.11320752, b: 0.026355023, a: 1}
+    max: {r: 0.059573703, g: 0.2924528, b: 0, a: 1}
+    lastValue: {r: 0.002884507, g: 0.14299679, b: 0.01327934, a: 1}
+  mountain:
+    min: {r: 0.21081054, g: 0.13697046, b: 0.3584906, a: 1}
+    max: {r: 0.43171427, g: 0.27069238, b: 0.745283, a: 1}
+    lastValue: {r: 0.31423157, g: 0.19021294, b: 0.64519113, a: 1}
+  mountainPeak:
+    min: {r: 0.6509434, g: 0.21186365, b: 0.21186365, a: 1}
+    max: {r: 1, g: 0, b: 0, a: 1}
+    lastValue: {r: 0.66453534, g: 0.085564174, b: 0.04366846, a: 1}
+  biomeCount:
+    min: 1
+    max: 3
+    lastValue: 3
+  biomeTintPercent:
+    min: 0
+    max: 0.3
+    lastValue: 0.2780677
+  biomeSimpleNoiseSettings:
+    min:
+      strength: 0.15
+      numberOfLayers: 1
+      persistance: 0.025
+      baseRoughness: 0.1
+      roughness: 0.1
+      centre: {x: -1, y: -1, z: -1}
+      minVal: 0
+    max:
+      strength: 3
+      numberOfLayers: 4
+      persistance: 0.4
+      baseRoughness: 2
+      roughness: 5
+      centre: {x: 1, y: 1, z: 1}
+      minVal: 0.5
+    lastValue:
+      strength: 2.2707226
+      numberOfLayers: 1
+      persistance: 0.36956105
+      baseRoughness: 0.9394249
+      roughness: 4.4716954
+      centre: {x: -0.4255048, y: 0.42939016, z: -0.55991507}
+      minVal: 0.19711742
+  biomeRidgidNoiseSettings:
+    min:
+      strength: 0.15
+      numberOfLayers: 1
+      persistance: 0.025
+      baseRoughness: 0.1
+      roughness: 0.1
+      centre: {x: -1, y: -1, z: -1}
+      minVal: 0
+      weightMultiplier: 0.1
+    max:
+      strength: 3
+      numberOfLayers: 4
+      persistance: 0.4
+      baseRoughness: 2
+      roughness: 5
+      centre: {x: 1, y: 1, z: 1}
+      minVal: 0.5
+      weightMultiplier: 0.8
+    lastValue:
+      strength: 1
+      numberOfLayers: 1
+      persistance: 0.5
+      baseRoughness: 2
+      roughness: 1
+      centre: {x: 0, y: 0, z: 0}
+      minVal: 0
+      weightMultiplier: 0.8
+  biomeNoiseStrength:
+    min: 0
+    max: 0.25
+    lastValue: 0.21438307
+  biomeNoiseOffset:
+    min: -0.25
+    max: 0.25
+    lastValue: 0.062976114
+  biomeBlendAmount:
+    min: 0.1
+    max: 0.7
+    lastValue: 0.5953518
+  waterSmoothness:
+    min: 0.4
+    max: 0.9
+    lastValue: 0.6771671
+  waterNoiseStrength:
+    min: 0.5
+    max: 1.2
+    lastValue: 0.9044019
+  waterScroll:
+    min: {x: 0.15, y: -0.15}
+    max: {x: 1, y: -1}
+    lastValue: {x: 0.46367535, y: -0.6943538}
+  waterTextureScale:
+    min: {x: 20, y: 20}
+    max: {x: 50, y: 50}
+    lastValue: {x: 40.04535, y: 37.85889}
